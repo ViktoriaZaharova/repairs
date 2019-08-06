@@ -1,0 +1,505 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px)
+  .main
+    .container
+      padding-left: 90px
+
+  .container
+    width: 100%
+
+  header
+    padding: 14px 30px
+    .block_phone
+      a
+        font-size: 18px
+      .phone
+        &:after
+          -webkit-background-size: contain
+          background-size: contain
+          width: 100%
+
+  .menu
+    width: 400px
+
+  .logo
+    width: 170px
+
+  .introduction, .economy
+    .container
+      .subtitle
+        max-width: 80%
+      .red
+        font-size: 36px
+        line-height: 40px
+      h3
+        font-size: 35px
+        line-height: 40px
+      .introduction_item
+        width: 98%
+        .item
+          flex-wrap: wrap
+          p
+            font-size: 30px
+            line-height: 30px
+            min-width: 400px
+
+  .subtitle
+    font-size: 40px
+    line-height: 50px
+    margin-bottom: 20px
+
+  .economy
+    &:before
+      display: none
+    .container
+      padding: 98px 20px 175px
+      .subtitle
+        margin-bottom: 40px
+      h6
+        font-size: 30px
+        line-height: 30px
+        margin-bottom: 50px
+      .economy_content
+        flex-direction: column
+        .block_text, .block_video
+          width: 100%
+          p
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 10px
+            img
+              display: none
+        .block_video
+          margin: 10px 0 0 0
+          .video
+            height: 300px
+
+  .quality
+    .container
+      padding-left: 10px
+      padding-right: 10px
+      p
+        font-size: 24px
+        line-height: 28px
+
+  .issue_of_economy
+    .container
+      padding: 50px 0
+      .issue_of_economy_content
+        flex-direction: column
+        align-items: flex-start
+        .item
+          width: 100%
+          margin-bottom: 20px
+          height: auto
+          padding-bottom: 30px
+      .issue_of_economy_logo
+        justify-content: space-around
+        flex-wrap: wrap
+        width: 100%
+        img
+          margin: 0 auto
+          &:first-child, &:last-child
+            margin: 0 auto
+
+  .confidence, .advantages, .financial_guarantee, #price, .evidence
+    .container
+      padding: 50px 10px
+      .confidence_content
+        flex-direction: column
+        align-items: center
+        .block_video, .block_text
+          width: 100%
+        .block_video
+          height: 300px
+          margin-bottom: 20px
+        .block_text
+          margin-left: 0
+          border-left: 0
+          padding: 0
+          p
+            font-size: 16px
+            margin-bottom: 10px
+            line-height: 20px
+
+  .advantages
+    .container
+      .advantages_content
+        margin-top: 40px
+        justify-content: space-around
+        .item
+          margin: 0 0 40px 0
+
+  .financial_guarantee
+    .container
+      .financial_guarantee-content
+        flex-direction: column
+        align-items: center
+        margin-top: 40px
+        .block_video, .block_text
+          width: 100%
+        .block_text
+          margin: 30px 0 0 0
+          h5
+            font-size: 30px
+            line-height: 34px
+          p
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 10px
+
+  #price
+    .container
+      h5.red
+        font-size: 27px
+        margin: 20px 0
+      p
+        font-size: 20px
+        line-height: 24px
+      .price_content
+        margin-top: 40px
+
+  .evidence
+    .container
+      .evidence_content
+        margin-left: 0
+
+  .guarantee
+    .container
+      padding: 50px  10px
+      .subtitle
+        font-size: 50px
+        line-height: 54px
+        max-width: 90%
+        margin-bottom: 20px
+      p
+        max-width: 90%
+        font-size: 28px
+        line-height: 30px
+
+  #contacts
+    .container
+      padding: 50px 20px 70px
+      flex-direction: column
+      align-items: center
+      .block_left
+        width: 100%
+        margin-bottom: 40px
+
+@media screen and (max-width: 992px)
+  .introduction
+    .container
+      .introduction_item
+        width: 100%
+        .item
+          flex-direction: column
+          align-items: center
+          margin-bottom: 20px
+          p
+            min-width: auto
+            margin: 0 0 20px 0
+
+  #price
+    .container
+      .price_content
+        flex-direction: column
+        align-items: center
+        .item
+          margin-bottom: 20px
+          width: 100%
+          border:
+            left: 1px solid #c6c6c6
+            right: 1px solid #c6c6c6
+          .item_top
+            min-height: auto
+          &:last-child
+            border-right: 1px solid #c6c6c6
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 870px)
+  .menu
+    display: none
+    position: absolute
+    top: 90px
+    left: 0
+    z-index: 3
+    background: #FFFFFF
+    width: 100%
+    ul
+      flex-direction: column !important
+      align-items: center
+      padding-bottom: 15px
+      li
+        a
+          line-height: 24px !important
+
+  #mobile_mnu
+    display: flex !important
+    flex-direction: column
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    text-decoration: underline
+    font-weight: bolder
+    font-size: 18px
+    color: #000
+    cursor: pointer
+    position: relative
+
+  h1
+    font-size: 50px
+    max-width: 100%
+    line-height: 45px
+
+  .quality
+    padding-right: 70px
+    &:after
+      -webkit-background-size: cover
+      background-size: cover
+      width: 120px
+
+@media screen and (max-width: 768px)
+  .introduction
+    .container
+      .description
+        z-index: 2
+        width: 100%
+        height: auto
+        margin: 50px 0 90px
+        padding: 15px 20px
+        &:before
+          bottom: -40px
+        p
+          font-size: 18px
+          line-height: 22px
+          z-index: 3
+
+  .advantages
+    .container
+      .advantages_content
+        flex-direction: column
+        align-items: center
+
+  .guarantee
+    .container
+      .subtitle
+        font-size: 30px
+        line-height: 34px
+      p
+        font-size: 16px
+        line-height: 20px
+
+  .gallery
+    .container
+      .gallery_content
+        flex-direction: column
+        align-items: center
+        margin-top: 40px
+        a
+          width: 100%
+          height: auto
+          display: flex
+          align-items: center
+          justify-content: center
+
+  .decor, .dec-min
+    display: none
+
+
+  .financial_guarantee .container .subtitle
+    font-size: 40px
+    line-height: 42px
+
+@media screen and (max-width: 580px)
+  .main
+    .container
+      padding: 100px 20px
+      p
+        font-size: 25px
+      .main_item
+        width: 100%
+
+  .introduction, .economy
+    .container
+      padding: 50px 15px
+      .red
+        font-size: 28px
+      h3
+        font-size: 20px
+        line-height: 24px
+      .introduction_item
+        .item
+          max-width: 85%
+          margin: 0 auto 20px
+          p
+            font-size: 24px
+            line-height: 26px
+          span
+            max-width: 100%
+            font-size: 16px
+            line-height: 18px
+
+  .subtitle
+    font-size: 30px
+    line-height: 36px
+
+  .evidence
+    .container
+      .evidence_content
+        .item
+          flex-direction: column
+          align-items: center
+          .block_img
+            margin: 0 0 20px 0
+          .text
+            h6
+              font-size: 24px
+              text-align: center
+            p
+              font-size: 16px
+              line-height: 20px
+              text-align: center
+
+  #contacts
+    .container
+      .block_left
+        .bl_phone
+          flex-direction: column
+          align-items: flex-start
+          margin-top: 20px
+          a
+            margin: 0 0 10px 0
+      form
+        width: 100%
+        label
+          input
+            width: 100%
+        button
+          width: 280px
+          font-size: 14px
+
+  footer
+    .container
+      padding: 20px 0
+      a
+        font-size: 14px
+      p
+        margin-bottom: 15px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px)
+  #mobile_mnu
+    width: 100%
+    order: 1
+
+  .menu
+    top: 110px
+
+  .logo
+    order: -2
+
+  header .block_phone
+    order: -1
+
+  h1
+    font-size: 40px
+    max-width: 100%
+    line-height: 36px
+    span
+      line-height: 55px
+
+  .main
+    .container
+      p
+        font-size: 20px
+      .main_item
+        .it
+          p
+            font-size: 20px
+
+  #reviews
+    .container
+      .reviews_carousel
+        margin: 40px 0 0 0
+        padding: 0 50px
+        .carousel_item
+          width: 250px
+
+  .modal_div
+    width: 100%
+    left: 0
+    margin-left: 0
+    padding: 20px 15px 0 13px
+    h3
+      margin-bottom: 15px
+      font-size: 20px
+      line-height: 24px
+    form
+      button, label
+        width: 100%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 440px)
+  header
+    flex-direction: column
+    align-items: center
+
+  #mobile_mnu
+    margin-top: 10px
+
+  .menu
+    top: 170px
+
+  h1
+    font-size: 30px
+
+  .quality
+    padding-right: 10px
+    &:after
+      display: none
+    .container
+      p
+        font-size: 22px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 350px)
+  #reviews
+    .container
+      .reviews_carousel
+        padding: 0 40px
+        .owl-nav
+          .owl-prev
+            right: 0
+          .owl-next
+            left: 0
+        .carousel_item
+          width: 220px
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
